@@ -65,6 +65,10 @@
       .custom-file-input:active::before {
         background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
       }
+      .row-1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
     </style>
   </head>
   <body>
@@ -132,7 +136,7 @@
         style="margin: 1rem 2rem; display: flex; flex-direction: column"
       >
         <div
-          class="row"
+          class="row row-1"
           style="
             display: flex;
             gap: 20px;
@@ -517,7 +521,7 @@
                 font-size: inherit;
                 border: none;
                 width: 100px;
-                min-width: 400px;
+                min-width: 300px;
                 box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
                 border-radius: 2px;
               "
